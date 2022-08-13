@@ -1,12 +1,14 @@
+import { FavlistContext } from '../context/FavlistContext';
 import React,{ useState,useEffect,useContext } from 'react';
 import axios from 'axios';
 import Navbar from '../components/Navbar';
-import { CartContext } from '../context/CartContext';
+
 
 export default function Home() {
 
+    const {cart, setCart} = useContext(FavlistContext)
     const [products, setProducts]=useState([])
-    const {cart, setCart} = useContext(CartContext)
+    
 
     useEffect(() => {
         axios

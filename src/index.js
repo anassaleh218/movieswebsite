@@ -1,13 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
+import { FavlistContext } from './context/FavlistContext';
 import './sass/main.scss';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+
+    <FavlistContext>
     <App />
-  </React.StrictMode>
+    </FavlistContext>
+    
 );
 
 // If you want to start measuring performance in your app, pass a function

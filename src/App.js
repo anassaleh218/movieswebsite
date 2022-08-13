@@ -1,13 +1,14 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Login from './Pages/Login';
-import Home from './Pages/Home';
-import Details from './Pages/Details';
-import Favlist from './Pages/Favlist';
+import Login from './pages/Login';
+import Home from './pages/Home';
+import Details from './pages/Details';
+import Favlist from './pages/Favlist';
 
 function App() {
   return (
     <>
+   
       <div className="App">
         <Router>
           <Routes>
@@ -20,6 +21,7 @@ function App() {
           </Routes>
         </Router>
       </div>
+      
     </>
   );
 }
