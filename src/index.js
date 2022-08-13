@@ -1,15 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
-import { FavlistContext } from './context/FavlistContext';
+import FavlistProvider from './context/FavlistContext';
 import './sass/main.scss';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 
-    <FavlistContext>
+    <FavlistProvider>
     <App />
-    </FavlistContext>
+    </FavlistProvider>
     
 );
 
