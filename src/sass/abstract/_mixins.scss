@@ -1,0 +1,5 @@
+@mixin responsive-mob {
+    @media(max-width: 570px){
+        @content
+    }
+}

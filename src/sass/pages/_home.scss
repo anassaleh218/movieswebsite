@@ -1,0 +1,9 @@
+.shop{
+    @include responsive-mob{
+        .title{
+            color: blue;
+        }
+    }
+
+}
+
