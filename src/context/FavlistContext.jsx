@@ -4,10 +4,12 @@ export const FavlistContext=createContext();
 
 
 export default function FavlistProvider(props) {
-    const [cart, setCart]= useState([]);
+    const [list, setList]= useState([]);
   return (
-    <FavlistContext.Provider value={{cart, setCart}}>
-        {props.childeren}
+
+    <FavlistContext.Provider value={{list, setList}}>
+        {props.children}
     </FavlistContext.Provider>
+    
   )
 }
